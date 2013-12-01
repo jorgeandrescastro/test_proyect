@@ -1,0 +1,20 @@
+<?php 
+if(isset($this->previous)) {
+	echo '<a href="' . $this->url(array('page' => $this->previous)) . '"><</a> | '; 
+} else {
+	echo '< | ';
+}
+
+foreach($this->pagesInRange as $page) {
+	if($this->current != $page){
+		echo '<a href="' . $this->url(array('page' => $page)) . '">' . $page . '</a> | ';
+	} else {
+		echo $page . ' | ';
+	}
+}
+
+if(isset($this->next)) {
+	echo '<a href="' . $this->url(array('page' => $this->next)) . '">></a> | ';
+} else {
+	echo '>';
+}

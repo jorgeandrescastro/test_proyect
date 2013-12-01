@@ -1,0 +1,19 @@
+<script>
+	$(function() {
+		$( "#birthday" ).datepicker();
+	});
+</script>
+<br /><br />
+<div class="title">
+<?php 
+if(strlen($this->savedMessage) != 0) {
+	echo '<div class="success">' . $this->savedMessage . '</div>';
+}
+
+if(strlen($this->errorMessage) != 0) {
+	echo '<div class="error">' . $this->errorMessage . '</div>';
+}
+
+echo $this->form;
+?>
+</div>

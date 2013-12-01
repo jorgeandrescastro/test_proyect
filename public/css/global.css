@@ -1,0 +1,72 @@
+a {
+	font-family: arial;
+	font-size: 12px;
+	text-decoration: none;
+	color: gray;
+}
+
+a visited {
+	color: gray;
+}
+
+a hover {
+	color: green;
+}
+
+.error{
+	color: red;
+	font-weight: bold;
+}
+
+.success{
+	color: green;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.title {
+	font-family: verdana;
+    font-size: 12px;
+}
+
+.verdana {
+	font-family: verdana;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+table {
+    font-family: verdana;
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+}
+
+.header {
+	width: 100%;
+	border-radius: 15px;
+	text-align: center;
+	background-color: #BDBDBD;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-family: arial;
+}
+
+.menu {
+	border-radius: 15px;
+	font-family: verdana;
+	font-size: 13px;
+	background-color: #E6E6E6;
+	width: 25%;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.float {
+	float: left;
+}

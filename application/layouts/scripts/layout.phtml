@@ -1,0 +1,26 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Softgames.de Test</title>
+  <?php echo $this->headLink()->appendStylesheet('/css/global.css');
+ 		echo $this->headLink()->appendStylesheet('/css/smoothness/jquery-ui-1.8.21.custom.css');
+  		echo $this->headScript()->appendFile('/js/jquery-1.7.2.min.js');
+  		echo $this->headScript()->appendFile('/js/jquery-ui-1.8.21.custom.min.js'); ?>
+</head>
+<body>
+<div class="header">
+	Test Project SoftGames
+</div>
+<br/>
+<div id="menu" class="center">
+	<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'edit')); ?>"><div class="menu float">Edit Profile</div></a>
+	<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'message')); ?>"><div class="menu float">Messages</div></a>
+	<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'csv')); ?>"><div class="menu float">CSV Editing</div></a>
+	<a href="<?php echo $this->url(array('controller' => 'authentication', 'action' => 'logout')); ?>"><div class="menu float">Log Out</div></a>
+</div>
+ 
+<?php echo $this->layout()->content ?>
+ 
+</body>
+</html>

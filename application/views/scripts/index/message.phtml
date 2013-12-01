@@ -1,0 +1,30 @@
+<br /><br />
+<div class="center title bold">
+	<a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'send')); ?>">Send a Message</a>
+</div>
+<br />
+<div class="center title bold">List of messages</div>
+<br/><br/>
+<table>
+	<tr>
+		<th>From</th>
+		<th>Date</th>
+		<th>Message</th>
+	</tr>
+<?php
+
+foreach ($this->paginator as $message){
+	echo '<tr>';
+	echo '<td>' . $message->getFrom()->getName() . '</td>';
+	echo '<td>' . $message->getTimestamp() . '</td>';
+	echo '<td>' . $message->getMessage() . '</td>';
+	echo '</tr>';
+}
+?>
+</table>
+<br/><br/>
+<div class="center title">
+<?php 
+echo $this->paginationControl($this->paginator, 'Sliding', 'pagination.phtml');
+?>
+</div>
